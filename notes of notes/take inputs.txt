@@ -1,0 +1,60 @@
+To take input in Node.js, you can use the `readline` module, which provides an interface for reading data from a readable stream (like the terminal). Here’s how you can set it up to accept user input:
+
+ Steps to Take Input in Node.js:
+
+1. Import the `readline` module:
+
+javascript
+const readline = require('readline');
+
+
+2. Create an interface for input and output:
+
+javascript
+const rl = readline.createInterface({
+  input: process.stdin,  // Standard input (keyboard)
+  output: process.stdout // Standard output (console)
+});
+
+
+3. Prompt the user for input:
+
+javascript
+rl.question('What is your name? ', (answer) => {
+  console.log(`Hello, ${answer}!`);
+  rl.close();  // Close the input stream
+});
+
+
+ Full Example Code:
+
+javascript
+const readline = require('readline');
+
+// Create an interface for input/output
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Ask the user a question and handle the response
+rl.question('What is your name? ', (answer) => {
+  console.log(`Hello, ${answer}!`);
+  
+  // Close the readline interface after receiving input
+  rl.close();
+});
+
+
+ How it works:
+- `rl.question` prompts the user with a question (`'What is your name?'` in this case).
+- The second argument is a callback function that gets executed when the user provides an answer. The user's input will be passed into the `answer` parameter.
+- After the answer is processed, `rl.close()` closes the interface, terminating the input stream.
+
+ Example Output:
+
+$ node inputExample.js
+What is your name? Alice
+Hello, Alice!
+
+

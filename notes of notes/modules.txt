@@ -1,0 +1,28 @@
+In Node.js, modules are individual units of code that encapsulate specific functionality, which you can reuse in different parts of your application. Modules help to keep your code organized, reusable, and maintainable. There are 3 main types of modules in Node.js:
+
+1. Built-in Modules  (core)
+2. Third-party Modules  
+3. Custom Modules (local)
+
+ 1. Built-in Modules
+Node.js comes with a set of core modules that you can use without installing anything extra. These modules provide important functionalities like file system operations, networking, streams, and more.
+
+
+
+
+
+ 2. Third-party Modules
+These are modules created by other developers and are available via npm (Node Package Manager). npm is a tool that helps you install, manage, and share these modules.
+
+You can install third-party modules using npm:
+
+npm install <module-name>
+
+
+
+
+ 3. Custom Modules
+Custom modules are ones that you write yourself. You can create a module to group related code, functions, or variables and then export it to be used in other files.
+
+
+

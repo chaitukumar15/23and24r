@@ -1,0 +1,33 @@
+
+What is REPL?
+
+
+Read – It reads the input you type.
+Eval – It evaluates the code you typed.
+Print – It shows the result of your code.
+Loop – It goes back and waits for the next input.
+
+Why is REPL useful?
+
+
+Test small code snippets.
+Try out new functions.
+Debug and experiment with  ideas.
+
+
+How to use REPL?
+
+
+Open the terminal (or command prompt).
+Type node and press Enter. This will start the REPL session.
+Once  in, we will see a prompt where we can start typing JavaScript code.
+
+For example, show them:
+
+sh
+Copy
+$ node
+> 2 + 2
+4
+> console.log('Hello, world!')
+Hello, world!
