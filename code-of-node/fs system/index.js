@@ -1,10 +1,6 @@
 var fs = require("fs");
 
-
-
-
-
-// reading file 
+// reading file
 // var y=fs.readFileSync("./index.txt","utf-8");
 
 // fs.readFile("./index.txt","utf-8",(err, data) => {
@@ -16,14 +12,9 @@ var fs = require("fs");
 // });
 // console.log(y);
 
-
 // console.log("hi i am last ");
 
-
-
-
 // creating files
-
 
 // var obj={a:"chaitanya",age:200}
 
@@ -33,12 +24,11 @@ var fs = require("fs");
 
 // if(err){
 //     console.log(err);
-    
+
 // }else{
 //     console.log("file has been created");
-    
-// }
 
+// }
 
 // })
 
@@ -46,33 +36,71 @@ var fs = require("fs");
 //     console.log(err);
 // })
 
-
-
-// append file 
+// append file
 
 // fs.appendFile("./chaitanya123.txt","\nhi this is append",(err)=>{
 
 //     if(err){
 //         console.log(err);
-        
+
 //     }else{
 //         console.log("file has been appended");
-        
+
 //     }
 
 // })
 
+// deleting the file
 
-// deleting the file 
+// fs.unlink("./chaitanya.txt",(err)=>{
 
-fs.unlink("./chaitanya.txt",(err)=>{
+//     if(err){
+//         console.log(err);
 
-    if(err){
-        console.log(err);
-        
-    }else{
-        console.log("deleted the files");
-        
-    }
+//     }else{
+//         console.log("deleted the files");
 
-})
+//     }
+
+// })
+
+// fs.rename("index.txt","chaitanya.js",(err)=>{
+//     console.log(err);
+
+// })
+
+// fs.rm("ramy",{recursive:true},(err)=>{
+
+//     console.log(err);
+
+// })
+
+// rm -> include recursive (non emppty folder)
+
+// fs.stat("chai.js", (err, files) => {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(files);
+//   }
+// });
+
+
+
+// function tenth(hi) {
+  
+//     hi()
+    
+//   }
+  
+//   function hi()
+//   {
+    
+//     console.log("hello")
+    
+//   }
+  
+  
+//   tenth(hi);
+
+
