@@ -101,6 +101,26 @@ var fs = require("fs");
 //   }
   
   
-//   tenth(hi);
+//   tenth(hi)
 
 
+
+fs.readdir("raju",(err,data)=>{
+
+    console.log(data);
+    
+
+    data.map((val)=>{
+
+        console.log("raju/"+val);
+
+        fs.stat("raju/"+val,(err,stats)=>{
+
+            console.log(stats.isDirectory());
+            
+        })
+        
+
+    })
+
+})
