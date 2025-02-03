@@ -3,7 +3,7 @@ var fs = require("fs");
 var server = http.createServer((req, res) => {
   console.log(req.method);
 
-  if (req.method == "POST") {
+  if (req.method == "GET") {
     fs.readFile("./res.json", "utf-8", (err, data) => {
       if (err) {
         res.write("error");
@@ -14,8 +14,11 @@ var server = http.createServer((req, res) => {
       }
 
     });
-  } else {
-    res.write("pass correct method");
+  } else if(req.method == "POST") {
+    
+    fs.writeFile("res.json","hi thios",(err)=>{
+
+    })
   }
 
 });
