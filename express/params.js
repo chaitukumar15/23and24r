@@ -3,7 +3,7 @@ var express = require("express");
 var fs = require("fs");
 
 var app = express();
-var port = 3002;
+var port = 3005;
 
 // sweets api -> pathanme - sweets method- get data -index.json
 
@@ -17,8 +17,8 @@ app.get("/sweets", (req, res) => {
     } else {
       res.send({
         status: 200,
-        msg: "successfully read",
-        data: data,
+        msg: "successfully created ",
+        data: JSON.parse(data),
       });
     }
   });
